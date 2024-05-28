@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap 5.3 -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
     <!-- fontawsome 6.4 -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
 
@@ -31,22 +28,22 @@
             <div class="container">
                 <!-- SIDEBAR -->
                 <div class="sidebar">
-                    <div class="d-flex align-items-start flex-column h-100 w-100">
+                    <div class="sidebar-nav">
                         <!-- LOGO -->
-                        <div class="logo" class="w-100">
+                        <div class="logo">
                             <a class="logo-link" href="index.html">
                                 <img src="assets/img/logo.png" class="TechTrends-logo" alt="TechTrends-logo">
                             </a>
                         </div>
                         <!-- MENU CONTAINER -->
-                        <div class="sidebar-cell" class="w-100">
+                        <div class="sidebar-cell">
                             <!-- MOBILE MENU BUTTON -->
                             <div class="menu-toggle">MENU</div>
                             <!-- MENU -->
                             <nav class="main-menu" class="menu-main-menu-container">
                                 <ul class="menu-ul">
                                     <li><a href="index.html">Home</a></li>
-                                                              <li><a href="blogs.html">Blog</a></li>
+                                    <li><a href="blogs.html">Blog</a></li>
                                     <li><a href="single-post.html">Single Post</a></li> 
                                 </ul>
                             </nav>
@@ -54,7 +51,7 @@
 
 
                         <!-- SOCIAL MEDIA ICONS -->
-                        <div class="social-cell" class="mt-auto w-100">
+                        <div class="social-cell" >
                             <div id="social-inner">
                                 <ul class="social-icons">
                                     
@@ -81,6 +78,7 @@
                     </li>
                 </ul>
                 <div class="clearfix"></div>
+
                 <!-- PAGE TITLE -->
                 <header class="page-title" >
                     <h1><span>A Single Post</span></h1>
@@ -95,7 +93,7 @@
                     </div>
                 </header>
 
-                <section class="featured-img mb-3 ">
+                <section class="featured-img">
                     <img src="assets/img/card6.jpg" alt="Security Best Practices">
                 </section>
         <section class="page-content-wrapper">
@@ -110,7 +108,7 @@
                     <h2>A Photo Gallery</h2>
                     <p>Qui illum fugiat velit laboris. <i>"Ad esse irure multos appellat.<u> Ad labore mandaremus.</u>"</i> Litteris aute ullamco iis non in coniunctione a iis possumus si admodum e enim nostrud praesentibus. Non aute transferrem te et aute fidelissimae. Mandaremus veniam ab cupidatat exquisitaque, e quae laboris domesticarum, non sint mentitum fabulas de anim proident transferrem, ita aliqua imitarentur in in labore illum eram offendit, nisi fidelissimae possumus noster ullamco se eiusmod multos ex offendit transferrem. Iudicem voluptatibus qui consequat ita litteris culpa arbitror senserit.</p>
                     <!-- IMAGE GALLERY -->
-                    <div class=" gallery" style="opacity: 1;">
+                    <div class=" gallery" >
                                 <div class="gallery-item">
                                 <img src="assets/img/post2.jpeg" alt="">
                                 </div>
@@ -225,7 +223,7 @@
                 </ul>
             </section>
 <!-- COMMENTS  -->
-                <div id="comments-wrapper" class="mt-3">
+                <div id="comments-wrapper">
                     <div id="comments_block" class="comments_block">
                         <h3 class="title-with-border">
                             <span>Comments</span>
@@ -238,7 +236,7 @@
                                     <div class="comment">
                                         <div class="comment_inner">
                                             <div class="comment_left">
-                                                <img alt="" src="http://0.gravatar.com/avatar/0b19666d0fc7a149e6f8f2319a04ef63?s=60&amp;d=mm&amp;r=g">
+                                                <img alt="person" src="assets/img/person.jpg">
                                             </div>
                                             <div class="comment_right">
                                                 <div class="comment_right_inner ">
@@ -262,7 +260,7 @@
                                     <div class="comment">
                                         <div class="comment_inner">
                                             <div class="comment_left">
-                                                <img alt="" src="http://0.gravatar.com/avatar/0b19666d0fc7a149e6f8f2319a04ef63?s=60&amp;d=mm&amp;r=g">
+                                                <img alt="person" src="assets/img/person.jpg">
                                             </div>
                                             <div class="comment_right">
                                                 <div class="comment_right_inner ">
@@ -298,35 +296,37 @@
 
         <footer id="footer">
             <div class="container">
-                <div class="row footer-wrapper">
+                <div class="footer-wrapper">
                     <!-- FOOTER WIDGET 1 -->
-                    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                        <p class="title-with-border">About Me</p>                       
-                        <p>With a passion for crafting stunning web experiences, I've earned the trust of countless clients. My expertise in creating innovative themes and plugins ensures that building gorgeous, responsive websites is a breeze.</p>
-                        <p><a href="#" class="btn btn-default">Read More</a></p>
+                    <div class="footer-widget about-me">
+                      <p class="title-with-border">About Me</p>                       
+                      <p>with a passion for crafting stunning web experiences, i've earned the trust of countless clients. my expertise in creating innovative themes and plugins ensures that building gorgeous, responsive websites is a breeze.</p>
+                      <p><a href="#" class="btn btn-default">read more</a></p>
                     </div>
                     <!-- FOOTER WIDGET 2 -->
-                    <div class="col-12 col-lg-6">
-                        <p class="title-with-border">Newsletter<p>
-                        <form method="post" action="index.html">
-                            <label>Subscribe to our mailing list!</label>
-                            <div class="input-group">
-                                <input type="email" class="form-control" name="EMAIL" placeholder="Your email address" required="">
-                                <div class="input-group-append">
-                                    <input type="submit" value="Sign up" class="btn btn-default">
-                                </div>
-                            </div>
-                        </form>
+                    <div class="footer-widget newsletter">
+                      <p class="title-with-border">NewSletter</p>
+                      <form method="post" action="index.html">
+                        <label>subscribe to our mailing list!</label>
+                        <div class="input-group">
+                          <input type="email" class="form-control" name="email" placeholder="your email address" required="">
+                          <div class="input-group-append">
+                            <input type="submit" value="sign up" class="btn btn-default">
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                </div>
-                <!-- CREDITS -->
-                <div class="footer-credits">
-                    <p>
-                        Made By <span>ANWAR ABULOLA</span>
-                    </p>
-                </div>
+                  </div>
+                  <!-- CREDITS -->
+                  <div class="footer-credits">
+                    <p>made by <span>Anwar Abulola</span></p>
+                  </div>
             </div>
         </footer>
+          <!-- GO TO UP BUTTON -->
+          <a id="gototop" href="#" ><i class="fa fa-chevron-up"></i></a>
+    
+        
         
     </div>
 

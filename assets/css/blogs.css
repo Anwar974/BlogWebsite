@@ -1,25 +1,33 @@
 
 /* ================= PAGINATION ================== */
 
+/* Container for pagination */
 .pager {
     display: block;
 }
 
+/* Center pagination and set its style */
 .pagination {
+    display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
-.pagination > .page-item > .dots,
-.pagination > .page-item > .page-link,
-.pagination > .page-item > span {
+/* Style each page item */
+.pagination > .page-item {
+    margin: 0 2px;
+}
+
+/* Style each link within a page item */
+.pagination > .page-item > .page-link {
     background-color: transparent;
     border: 2px solid #333;
     border-radius: 20px;
     color: #333;
     height: 40px;
-    margin: 0 2px;
     min-width: 40px;
     font-weight: 700;
     line-height: 38px;
@@ -30,16 +38,19 @@
     outline: none;
     box-shadow: none;
     font-size: 1rem;
+    text-decoration: none;
 }
 
-.pagination > .page-item > a:hover,
-.pagination > .page-item > a:focus,
-.pagination > .page-item > a:active {
+/* Hover, focus, and active styles for links */
+.pagination > .page-item > .page-link:hover,
+.pagination > .page-item > .page-link:focus,
+.pagination > .page-item > .page-link:active {
     background-color: #333;
     border-color: #333;
-    color: #FFFFFF;
+    color: #fff;
 }
 
+/* Active page item */
 .pagination > .page-item.active .page-link {
     background-color: #333;
     color: #fff;
@@ -47,6 +58,7 @@
     pointer-events: none;
 }
 
+/* Chevron icons */
 .pager .fa-chevron-right {
     margin-left: 2px;
 }
@@ -55,20 +67,30 @@
     margin-right: 2px;
 }
 
-
+/* Masonry grid and card styles */
+.masonry-grid {
+    opacity: 1;
+}
 
 .masonry-grid .card-masonry {
-    padding: 0px 30px;
+    padding: 0px 10px;
     margin-bottom: 60px;
     width: 50%;
 }
+
 .card-masonry {
     height: 700px;
 }
-.card-masonry .card img{
+
+.card-masonry .card img {
     height: 200px;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
@@ -159,4 +181,20 @@
     font-weight: 700;
     line-height: 1.5;
     color: #51cbce;
+}
+
+
+.read-more-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #51cbce;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #4aa5a6;
 }

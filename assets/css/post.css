@@ -25,6 +25,10 @@ h3{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.comments-wrapper{
+    margin-top: 1rem;
+}
+
 .comment_inner {
     display: table-row;
 }
@@ -217,6 +221,9 @@ textarea{
 /*                     SINGLE POST PAGE                */
 
 
+
+
+
 .page-title{
     margin-right: -110px;
      opacity: 1;
@@ -300,6 +307,7 @@ textarea{
 
 .gallery{
     margin: 40px -5px 30px -5px;
+    opacity: 1;
 }
 
 .gallery-item {
@@ -317,6 +325,7 @@ textarea{
 .column{
     width: 100%;
     float: left;
+    
 }
 
 
@@ -358,9 +367,7 @@ textarea{
     margin-top: 40px;
 }
 
-.no-border {
-    border:none !important;
-}
+
 
 .rrssb-buttons {
     box-sizing: border-box;

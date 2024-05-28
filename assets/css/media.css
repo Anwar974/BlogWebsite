@@ -58,15 +58,6 @@
     }
 }
 
-@media only screen and (max-height: 700px) {
-    .sidebar .logo-link {
-        padding: 40px;
-    }
-    .menu-ul li {
-        padding: 15px 40px;
-    }
-}
-
 @media only screen and (min-width: 1200px) {
     #social-cell,
     #main-menu {
@@ -221,9 +212,22 @@
     .card-masonry {
         height: auto;
     }
+    
+    
+      
+      
 }
 
-
+@media (min-width: 992px) {
+    .footer-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .footer-widget {
+      width: 48%;
+    }
+  }
 @media only screen and (max-width: 767px) {
     .card-horizontal-right {
         height: 300px;
@@ -251,6 +255,7 @@
         padding: 15px 40px;
     }
 }
+
 
 @media only screen and (max-width: 575px) {
     html {

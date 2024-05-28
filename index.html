@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap 5.3 -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <!-- fontawsome 6.4 -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
@@ -32,7 +30,7 @@
             <div class="container">
                 <!-- SIDEBAR -->
                 <div class="sidebar">
-                    <div class="d-flex align-items-start flex-column h-100 w-100">
+                    <div class="sidebar-nav">
                         <!-- LOGO -->
                         <div class="logo">
                             <a class="logo-link" href="index.html">
@@ -55,7 +53,7 @@
 
 
                         <!-- SOCIAL MEDIA ICONS -->
-                        <div class="social-cell" class="mt-auto w-100">
+                        <div class="social-cell" >
                             <div id="social-inner">
                                 <ul class="social-icons">
                                     
@@ -71,6 +69,7 @@
                     </div>
                 </div>
 
+
                
                 <!-- TOP ICONS -->
                 <ul class="top-icons">
@@ -84,14 +83,13 @@
                 <div class="clearfix"></div>
              
                  <!-- BLOG POSTS -->
-                 <div class="row">
+                 
                     <!-- BLOG POSTS -->
-                    <div class="col-12 col-lg-7">
-                        <div class="masonry-grid" style="opacity: 1;">
-                                <div class="column w-100 float-start">
-                                    
-                                    
-                                    <div class="card">
+                    <div class="content-wrapper">
+                        <div class="masonry-grid">
+                                <div class="column">
+
+                                    <article class="card">
                                         <a href="single-post.html">
                                             <img src="assets/img/card2.png" alt="TourMaker website">   
                                         </a>
@@ -116,8 +114,8 @@
                                     </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
+                                    </article>
+                                    <article class="card">
                                         <a href="single-post.html">
                                             <img src="assets/img/card1.png" alt="portfolio website">   
                                         </a>
@@ -144,8 +142,8 @@
                                     </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
+                                    </article>
+                                    <article class="card">
                                         <a href="single-post.html">
                                             <img src="assets/img/card5.jpg" alt="Backend Development">   
                                         </a>
@@ -171,8 +169,8 @@
                                     </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
+                                    </article>
+                                    <article class="card">
                                         <a href="single-post.html">
                                             <img src="assets/img/card6.jpg" alt="E-Commerce Website">   
                                         </a>
@@ -197,21 +195,23 @@
                                     </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </article>
                                     
                                 </div>
-                        </div>
-                         <!-- VIEW ALL BUTTON -->
-                    <div class="view-more mb-5">
+
+                                  <!-- VIEW ALL BUTTON -->
+                    <div class="view-more">
                         <a class="btn btn-default" href="blogs.html">VIEW ALL</a>
                     </div>
-                    </div>
+                        </div>
+                       
+                    
                     
             
 
 
                     <!-- SIDEBAR -->
-                    <div class="col-12 col-lg-5">
+                    <aside class="aside-section">
                         <!-- AUTHOR BOX -->
                         <div class="author-box  widget">
                             <div class="author-img">
@@ -332,7 +332,6 @@
                                 </div>
                             </div>
                         </div>  
-                
                         <!-- TAGS -->
                         <div class="widget">
                             <p class="title-with-border">Popular Posts</p>
@@ -355,48 +354,45 @@
                                 <a href="#">deserunt<span>6</span></a>
                             </div>
                         </div>
-                    </div>
+                    </aside>
                 </div>
                    
                 
-                    
-                </div> 
+            </div>      
+                 
             
         </main>
 
         <footer id="footer">
             <div class="container">
-                <div class="row footer-wrapper">
+                <div class="footer-wrapper">
                     <!-- FOOTER WIDGET 1 -->
-                    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                        <p class="title-with-border">About Me</p> 
-<p>With a passion for crafting stunning web experiences, I've earned the trust of countless clients. My expertise in creating innovative themes and plugins ensures that building gorgeous, responsive websites is a breeze.</p>
-                        <p><a href="#" class="btn btn-default">Read More</a></p>
+                    <div class="footer-widget about-me">
+                      <p class="title-with-border">About me</p>                       
+                      <p>With a passion for crafting stunning web experiences, i've earned the trust of countless clients. my expertise in creating innovative themes and plugins ensures that building gorgeous, responsive websites is a breeze.</p>
+                      <p><a href="#" class="btn btn-default">read more</a></p>
                     </div>
                     <!-- FOOTER WIDGET 2 -->
-                    <div class="col-12 col-lg-6">
-                        <p class="title-with-border">Newsletter<p>
-                        <form method="post" action="index.html">
-                            <label>Subscribe to our mailing list!</label>
-                            <div class="input-group">
-                                <input type="email" class="form-control" name="EMAIL" placeholder="Your email address" required="">
-                                <div class="input-group-append">
-                                    <input type="submit" value="Sign up" class="btn btn-default">
-                                </div>
-                            </div>
-                        </form>
+                    <div class="footer-widget newsletter">
+                      <p class="title-with-border">NewSletter</p>
+                      <form method="post" action="index.html">
+                        <label>Subscribe to our mailing list!</label>
+                        <div class="input-group">
+                          <input type="email" class="form-control" name="email" placeholder="your email address" required="">
+                          <div class="input-group-append">
+                            <input type="submit" value="sign up" class="btn btn-default">
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                </div>
-
-              
-                <!-- CREDITS -->
-                <div class="footer-credits">
-                    <p>
-                        Made By <span>ANWAR ABULOLA</span>
-                    </p>
-                </div>
+                  </div>
+                  <!-- CREDITS -->
+                  <div class="footer-credits">
+                    <p>Made by <span>ANWAR ABULOLA</span></p>
+                  </div>
             </div>
         </footer>
+
           <!-- GO TO UP BUTTON -->
           <a id="gototop" href="#" ><i class="fa fa-chevron-up"></i></a>
     </div>

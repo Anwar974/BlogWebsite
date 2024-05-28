@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap 5.3 -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <!-- fontawsome 6.4 -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
@@ -33,22 +31,22 @@
             <div class="container">
                 <!-- SIDEBAR -->
                 <div class="sidebar">
-                    <div class="d-flex align-items-start flex-column h-100 w-100">
+                    <div class="sidebar-nav">
                         <!-- LOGO -->
-                        <div class="logo" class="w-100">
+                        <div class="logo">
                             <a class="logo-link" href="index.html">
                                 <img src="assets/img/logo.png" class="TechTrends-logo" alt="TechTrends-logo">
                             </a>
                         </div>
                         <!-- MENU CONTAINER -->
-                        <div class="sidebar-cell" class="w-100">
+                        <div class="sidebar-cell">
                             <!-- MOBILE MENU BUTTON -->
                             <div class="menu-toggle">MENU</div>
                             <!-- MENU -->
                             <nav class="main-menu" class="menu-main-menu-container">
                                 <ul class="menu-ul">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="blogs.html">Blog</a></li>
                                     <li><a href="single-post.html">Single Post</a></li> 
                                 </ul>
                             </nav>
@@ -56,7 +54,7 @@
 
 
                         <!-- SOCIAL MEDIA ICONS -->
-                        <div class="social-cell" class="mt-auto w-100">
+                        <div class="social-cell" >
                             <div id="social-inner">
                                 <ul class="social-icons">
                                     
@@ -72,16 +70,28 @@
                     </div>
                 </div>
 
+                <!-- top icons -->
+
+                <ul class="top-icons">
+                    <li id="panel-icon">
+                        <a href="#" class="panel-open"><i class="fa fa-bars"></i></a>
+                    </li>
+                    <li id="search-icon">
+                        <a id="open-search" href="#"><i class="fa fa-search"></i></a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+
                 <!-- PAGE TITLE -->
 
-                <header class="page-title" style="margin-right: -110px; padding-right: 110px; opacity: 1;">
-                    <h1 class="no-border">Blogs Page </h1>
+                <header class="page-title">
+                    <h1 ><span>Blogs Page </span></h1>
+                    
                 </header>
 
                 <!-- BLOG POSTS -->
 
-                <section class="masonry-grid" style="opacity: 1;">
-
+                <section class="masonry-grid">
                         <article class="card-masonry column">
                         <div class="card">
                             <a href="single-post.html">
@@ -141,8 +151,6 @@
                                     </div>
                                 </div>
                         </article>
-                        
-                        
                         <article class="card-masonry column">
                             <div class="card">
                                 <a href="single-post.html">
@@ -230,7 +238,6 @@
                                 </div>
                             </div>
                         </article>
-                        
                         <article class="card-masonry column">
                             <div class="card">
                                 <a href="single-post.html">
@@ -245,36 +252,6 @@
                                             <a href="single-post.html">Building a Real-Time Chat Application</a>
                                         </h3>
                                         <p>Developed a real-time chat application that allows users to communicate instantly. The project included features like user authentication, chat rooms, and real-time message updates...</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="author-meta">
-                                            By <a class="author-meta-img" >Anwar Abulola</a>
-                                        </div>
-                                        <div class="reading-meta">24 Apr 2024</div>
-                                    <div class="date-meta">
-                                        
-                                        <a href="single-post.html" class="read-more-btn">Read more</a>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="card-masonry column">
-                            <div class="card">
-                                <a href="single-post.html">
-                                    <img src="assets/img/post2.jpeg" alt="E-Commerce Website">   
-                                </a>
-                                <div class="card-border">
-                                    <div class="card-body">
-                                        <div class="card-category">
-                                            <span>Web Developmet</span>
-                                        </div>
-                                        <h3 class="card-title">
-                                            <a href="single-post.html">Enhancing User Experience with Interactive...</a>
-                                        </h3>
-                                        <p>Created a website featuring interactive web elements to enhance user engagement and experience. This project focused on implementing animations, hover effects, and dynamic content updates using modern web development techniques.
-
-                                            ...</p>
                                     </div>
                                     <div class="card-footer">
                                         <div class="author-meta">
@@ -318,6 +295,37 @@
                                 </div>
                             </div>
                         </article>
+                        <article class="card-masonry column">
+                            <div class="card">
+                                <a href="single-post.html">
+                                    <img src="assets/img/post2.jpeg" alt="E-Commerce Website">   
+                                </a>
+                                <div class="card-border">
+                                    <div class="card-body">
+                                        <div class="card-category">
+                                            <span>Web Developmet</span>
+                                        </div>
+                                        <h3 class="card-title">
+                                            <a href="single-post.html">Enhancing User Experience with Interactive...</a>
+                                        </h3>
+                                        <p>Created a website featuring interactive web elements to enhance user engagement and experience. This project focused on implementing animations, hover effects, and dynamic content updates using modern web development techniques.
+
+                                            ...</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="author-meta">
+                                            By <a class="author-meta-img" >Anwar Abulola</a>
+                                        </div>
+                                        <div class="reading-meta">24 Apr 2024</div>
+                                    <div class="date-meta">
+                                        
+                                        <a href="single-post.html" class="read-more-btn">Read more</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        
                 </section>
 
                  <!-- TOP ICONS -->
@@ -331,57 +339,50 @@
                 </ul>
             </div>
             <div class="clearfix"></div>
-                <!-- PAGINATION -->
-
-                <div class="pager">
-                    <ul class="pagination flex-wrap">
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a></li>
-                    </ul>
-                </div>
-                
-                
-
-
-              
+            <!-- PAGINATION -->
+            <div class="pager">
+                <ul class="pagination">
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+  
         </main>
 
         
         <footer id="footer">
             <div class="container">
-                <div class="row footer-wrapper">
+                <div class="footer-wrapper">
                     <!-- FOOTER WIDGET 1 -->
-                    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                        <p class="title-with-border">About Me</p>
-                        <p>With a passion for crafting stunning web experiences, I've earned the trust of countless clients. My expertise in creating innovative themes and plugins ensures that building gorgeous, responsive websites is a breeze.</p>
-                        <p><a href="#" class="btn btn-default">Read More</a></p>
+                    <div class="footer-widget about-me">
+                      <p class="title-with-border">About Me</p>                       
+                      <p>with a passion for crafting stunning web experiences, i've earned the trust of countless clients. my expertise in creating innovative themes and plugins ensures that building gorgeous, responsive websites is a breeze.</p>
+                      <p><a href="#" class="btn btn-default">read more</a></p>
                     </div>
                     <!-- FOOTER WIDGET 2 -->
-                    <div class="col-12 col-lg-6">
-                        <p class="title-with-border">Newsletter<p>
-                        <form method="post" action="index.html">
-                            <label>Subscribe to our mailing list!</label>
-                            <div class="input-group">
-                                <input type="email" class="form-control" name="EMAIL" placeholder="Your email address" required="">
-                                <div class="input-group-append">
-                                    <input type="submit" value="Sign up" class="btn btn-default">
-                                </div>
-                            </div>
-                        </form>
+                    <div class="footer-widget newsletter">
+                      <p class="title-with-border">NewSletter</p>
+                      <form method="post" action="index.html">
+                        <label>subscribe to our mailing list!</label>
+                        <div class="input-group">
+                          <input type="email" class="form-control" name="email" placeholder="your email address" required="">
+                          <div class="input-group-append">
+                            <input type="submit" value="sign up" class="btn btn-default">
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                </div>
-                <!-- CREDITS -->
-                <div class="footer-credits">
-                    <p>
-                        Made By <span>ANWAR ABULOLA</span>
-                    </p>
-                </div>
+                  </div>
+                  <!-- CREDITS -->
+                  <div class="footer-credits">
+                    <p>made by <span>Anwar Abulola</span></p>
+                  </div>
             </div>
         </footer>
           <!-- GO TO UP BUTTON -->
-          <a id="gototop" href="#" style="bottom: 0px;"><i class="fa fa-chevron-up"></i></a>
+          <a id="gototop" href="#"><i class="fa fa-chevron-up"></i></a>
         
     </div>
 
