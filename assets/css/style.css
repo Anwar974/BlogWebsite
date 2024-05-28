@@ -1,10 +1,11 @@
 /*  custom css  */
 @import url('common.css');
 @import url('post.css');
-@import url('media.css');
 @import url('sidebar.css');
 @import url('cards.css');
 @import url('socialmedia.css');
+@import url('media.css');
+
 
 
 
@@ -339,3 +340,4 @@ font-size: 1.75rem;
     margin-right: 5px;
 }
 
+/* **************************************************************************************************** */
