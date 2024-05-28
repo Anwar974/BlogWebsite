@@ -1,100 +1,22 @@
+/* ================= CARDS ================== */
 
-/* ================= PAGINATION ================== */
-
-/* Container for pagination */
-.pager {
-    display: block;
-}
-
-/* Center pagination and set its style */
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-/* Style each page item */
-.pagination > .page-item {
-    margin: 0 2px;
-}
-
-/* Style each link within a page item */
-.pagination > .page-item > .page-link {
-    background-color: transparent;
-    border: 2px solid #333;
-    border-radius: 20px;
-    color: #333;
-    height: 40px;
-    min-width: 40px;
-    font-weight: 700;
-    line-height: 38px;
-    padding: 0;
-    text-align: center;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-    outline: none;
-    box-shadow: none;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-/* Hover, focus, and active styles for links */
-.pagination > .page-item > .page-link:hover,
-.pagination > .page-item > .page-link:focus,
-.pagination > .page-item > .page-link:active {
-    background-color: #333;
-    border-color: #333;
-    color: #fff;
-}
-
-/* Active page item */
-.pagination > .page-item.active .page-link {
-    background-color: #333;
-    color: #fff;
-    border-color: #333;
-    pointer-events: none;
-}
-
-/* Chevron icons */
-.pager .fa-chevron-right {
-    margin-left: 2px;
-}
-
-.pager .fa-chevron-left {
-    margin-right: 2px;
-}
-
-/* Masonry grid and card styles */
 .masonry-grid {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0px -30px;
+    min-width: 100%;
+    display: block;
+    transition: opacity 0.2s linear;
     opacity: 1;
 }
 
-.masonry-grid .card-masonry {
-    padding: 0px 10px;
-    margin-bottom: 60px;
-    width: 50%;
+.masonry-grid > div {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
 }
 
-.card-masonry {
-    height: 700px;
-}
-
-.card-masonry .card img {
-    height: 200px;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-
-/* ================= CARDS ================== */
 
 .card {
     padding: 0px 30px;
@@ -198,3 +120,89 @@
 .read-more-btn:hover {
     background-color: #4aa5a6;
 }
+
+
+
+/* ================= PAGINATION ================== */
+
+.pager {
+    display: block;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.pagination > .page-item {
+    margin: 0 2px;
+}
+
+.pagination > .page-item > .page-link {
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 20px;
+    color: #333;
+    height: 40px;
+    min-width: 40px;
+    font-weight: 700;
+    line-height: 38px;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    box-shadow: none;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.pagination > .page-item > .page-link:hover,
+.pagination > .page-item > .page-link:focus,
+.pagination > .page-item > .page-link:active {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+.pagination > .page-item.active .page-link {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    pointer-events: none;
+}
+
+.pager .fa-chevron-right {
+    margin-left: 2px;
+}
+
+.pager .fa-chevron-left {
+    margin-right: 2px;
+}
+
+
+.masonry-grid .card-masonry {
+    padding: 0px 10px;
+    margin-bottom: 60px;
+    width: 50%;
+}
+
+.card-masonry {
+    height: 700px;
+}
+
+.card-masonry .card img {
+    height: 200px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

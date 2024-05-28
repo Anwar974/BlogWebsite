@@ -1,0 +1,203 @@
+
+
+/******************* social media buttons***************************/
+
+
+#share-buttons {
+    margin-top: 55px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    font-family: "Merriweather Sans", "Helvetica", Arial, sans-serif;
+}
+
+.woocommerce #share-buttons {
+    margin-top: 40px;
+}
+
+
+
+.rrssb-buttons {
+    box-sizing: border-box;
+    font-size: .8rem;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.rrssb-buttons:before {
+    content: ' ';
+    display: table;
+}
+
+.rrssb-buttons li {
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    line-height: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.rrssb-buttons li a {
+    background-color: #ddd;
+    box-sizing: border-box;
+    display: block;
+   
+    font-weight: 700;
+    height: 100%;
+    padding: 10px 7px 12px 32px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+   
+    transition: background-color .2s ease-in-out;
+    width: 100%;
+}
+.rrssb-buttons li a .rrssb-icon {
+    display: block;
+    left: 15px;
+    padding-top: 15px;
+    position: absolute;
+    top: 0;
+    width: 10%;
+}
+.rrssb-buttons li.rrssb-facebook a {
+    background-color: #306199
+}
+
+.rrssb-buttons li.rrssb-facebook a:hover {
+    background-color: #244872
+}
+
+.rrssb-buttons li.rrssb-linkedin a {
+    background-color: #007bb6
+}
+
+.rrssb-buttons li.rrssb-linkedin a:hover {
+    background-color: #005983
+}
+.rrssb-buttons li.rrssb-twitter a {
+    background-color: #26c4f1
+}
+
+.rrssb-buttons li.rrssb-twitter a:hover {
+    background-color: #0eaad6
+}
+.rrssb-buttons li a .rrssb-icon {
+    display: block;
+    left: 15px;
+    padding-top: 15px;
+    position: absolute;
+    top: 0;
+    width: 10%;
+}
+.rrssb-buttons li a .rrssb-icon svg {
+    height: 18px;
+    width: 18px;
+}
+.rrssb-buttons li a .rrssb-text {
+    color: #fff;
+}
+
+.rrssb-facebook, .rrssb-twitter, .rrssb-linkedin{
+    width: 33.33333%;
+}
+.rrssb-buttons li a .rrssb-text {
+    color: #fff;
+}
+
+.rrssb-icon i {
+color: #fff;
+font-size: 20px;
+}
+
+
+/*               POST NAVIGATION             */
+
+
+.post-nav-wrapper {
+    position: relative;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    height: 100%;
+    margin-top: 60px;
+    background:#333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.post-nav-left-row,
+.post-nav-right-row {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.post-nav-left-row {
+    text-align: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.post-nav-right-row {
+    text-align: right;
+}
+
+.post-nav-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    height: 100%;
+}
+
+.post-nav-link {
+    padding: 20px 30px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post-nav-link a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.post-nav-link a:hover {
+    color: #51cbce;
+}
+
+.post-nav-table > .post-nav {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 50px;
+    padding: 0px;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.post-nav-left-row .post-nav {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.post-nav-right-row .post-nav {
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.post-nav-table > .post-nav:hover {
+    background-color: #222;
+    border-color:transparent;
+}
+
+
+
+

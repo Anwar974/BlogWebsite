@@ -1,13 +1,17 @@
+/*  custom css  */
+@import url('common.css');
+@import url('post.css');
+@import url('media.css');
+@import url('sidebar.css');
+@import url('cards.css');
+@import url('socialmedia.css');
+
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 /* font-family: 'Roboto', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700;800&display=swap");
-/* font-family: 'Dosis', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;800;900&display=swap");
-/* font-family: 'Raleway', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
-/* font-family: 'Roboto Condensed', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
-/* font-family: 'Dancing Script', cursive; */
+
 
 
 * {
@@ -72,238 +76,6 @@ dl, ol, ul {
     overflow-x: hidden;
 }
 
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    box-shadow: 0 30px 50px 0 rgba(1, 1, 1, .2);
-    overflow: auto;
-    z-index: 99;
-    width: 310px;
-    background-color: #171515;
-}
-.sidebar-nav{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    width:100%;
-}
-.sidebar-cell{
-    width: 100%;
-}
-
-.logo{
-    width:100%;
-}
-.logo-link {
-    display: block;
-    padding: 60px 40px;
-    font-size: 3rem;
-    color: #333;
-    font-weight: 700;
-    line-height: 1;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    text-align: center;
-    font-family: "Merriweather Sans", "Helvetica", Arial, sans-serif;
-}
-
-a:hover, a:focus {
-    color: #2ba9cd;
-    text-decoration: none;
-}
-
-.TechTrends-logo {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 230px;
-}
-
-.menu-toggle {
-    display: none;
-    position: relative;
-    margin: 0;
-    padding: 20px 40px;
-    border-bottom: 1px solid rgba(248, 245, 245, 0.05);
-    font-size: 1.45rem;
-    font-weight: 700;
-    cursor: pointer;
-    font-family: "Merriweather Sans", "Helvetica", Arial, sans-serif;
-}
-
-.menu-toggle::after {
-    font-family: 'FontAwesome';
-    content: "\f0c9";
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    font-weight: normal;
-}
-
-.menu-ul {
-    margin: 0;
-    padding: 0px;
-    list-style: none;
-    font-weight: 700;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    line-height: 1.4;
-    font-family: "Merriweather Sans", "Helvetica", Arial, sans-serif;
-}
-
-.menu-ul > li {
-    border-bottom: 1px solid rgba(248, 245, 245, 0.05);
-}
-.menu-ul li {
-    margin: 0;
-    padding: 20px 40px;
-    display: block;
-    width: 100%;
-}
-
-.menu-ul li a {
-    position: relative;
-    display: block;
-    outline: none;
-    text-decoration: none;
-    color: #fff;
-    padding: 0;
-}
-.menu-ul li a:hover{
-    outline: none;
-    color: #51cbce;
-}
-
-.social-cell{
-    margin-top: auto ;
-    width: 100%;
-}
-
-#social-inner {
-    padding: 0px 0px 30px 0px;
-    border-top: none;
-    position: relative;
-}
-
-.social-icons {
-    list-style: none;
-    margin: 0;
-    padding: 0 0 0 40px;
-    display: inline-block;
-    background: #51cbce;
-    vertical-align: bottom;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.social-icons li {
-    display: inline-block;
-    text-align: center;
-    line-height: 1;
-    float: left;
-    margin: 0;
-    font-size: 16px;
-}
-
-.social-icons li a {
-    color: #000;
-    display: block;
-    border-right: none;
-    padding: 0 25px 0 0;
-    width: auto;
-    height: 55px;
-    line-height: 55px;
-}
-
-.social-icons li:hover .fa-brands {
-    transform: scale(1.4);
-}
-.social-icons li a .fa-brands {
-    transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1);
-    backface-visibility: hidden;
-    transform: scale(1.1);
-}
-
-.featured-img{
-    margin-bottom: 1rem;
-}
-
-/* ******************* Top Icons ******************* */
-
-.top-icons {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    right: 30px;
-    z-index: 99999;
-    background: #333;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.top-icons li {
-    display: block;
-    width: 50px;
-    height: 55px;
-    text-align: center;
-    line-height: 55px;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    transition: background 0.2s cubic-bezier(0.34, 2, 0.6, 1);
-    color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.top-icons li a {
-    color: #fff;
-    display: block;
-    position: relative;
-}
-
-.top-icons li:hover .fa {
-    transform: scale(1.4);
-}
-
-/* ***************** Blog Posts ******************** */
-
-.row {
-    margin-right: -30px;
-    margin-left: -30px;
-}
-.col-12{
-padding-right: 30px;
-    padding-left: 30px;
-}
-
-.masonry-grid {
-    position: relative;
-    width: auto;
-    height: auto;
-    vertical-align: bottom;
-    margin: 0px -30px;
-    min-width: 100%;
-    display: block;
-    opacity: 0;
-    -webkit-transition: opacity 0.2s linear;
-    -moz-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
-}
-
-.masonry-grid > div {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 100%;
-}
-
-
 
 
 
@@ -330,6 +102,7 @@ padding-right: 30px;
 }
 
 /* ================= AUTHOR BOX ================== */
+
 .content-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -485,7 +258,7 @@ font-size: 1.75rem;
     margin-bottom: 0px;
     line-height: 1;
 }
-/*********/
+
 
 /* ================= POST LIST ================== */
 
@@ -564,156 +337,5 @@ font-size: 1.75rem;
 
 .post-list-meta span {
     margin-right: 5px;
-}
-
-/********************** FOOTER ***********************/
-
-
-.tag-cloud {
-    position: relative;
-    display: inline-block;
-    margin-bottom: -5px;
-}
-
-.tag-cloud:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.tag-cloud a {
-    float: left;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    padding: 10px 7px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 0.875rem !important;
-    line-height: 1;
-    color: inherit;
-}
-
-.tag-cloud a:hover {
-    text-decoration: none;
-    color: #51cbce;
-}
-
-.tag-cloud a span {
-    padding-left: 5px;
-    margin-left: 5px;
-    display: inline-block;
-    font-weight: 700;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-#footer {
-    position: relative;
-    padding: 0 95px;
-    background: #fafafa;
-    display: block;
-}
-
-.footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 80px 0 50px 0;
-  }
-  .footer-widget {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-
-  .footer-credits {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-  }
-
-.footer-credits:before {
-    background: rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), transparent);
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    z-index: 1;
-    content: "";
-}
-
-.footer-credits p {
-    margin: 0;
-    font-size: 0.875rem;
-}
-
-.footer-credits span{
-    color:#2ba9cd;
-}
-
-.footer-credits span:hover{
-    cursor: pointer;
-}
-.badge a {
-    color: #fff;
-}
-
-/* Styling for the about me section */
-.about-me p,
-.newsletter p {
-  margin-bottom: 10px;
-}
-
-/* Styling for the form */
-.input-group {
-  display: flex;
-}
-
-.input-group .form-control {
-  flex: 1;
-}
-
-.input-group-append {
-  margin-left: 10px;
-}
-
-
-
-
-/*                GO TO UP BUTTON                    */
-
-
-
-
-#gototop {
-    position: fixed;
-    right: 30px;
-    bottom: -50px;
-    z-index: 100;
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    background: #333;
-    color: #fff;
-    line-height: 50px;
-    padding: 0;
-    transition: bottom 0.2s linear;
-    font-size: 16px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    bottom: 0px;
-}
-
-#gototop .fa {
-   
-    transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1);
-    backface-visibility: hidden;
-    transform: scale(1.1);
-}
-
-#gototop:hover .fa {
-    transform: scale(1.4);
 }
 
